@@ -1,0 +1,9 @@
+TRUE ARBOLES
+bienEtiquetado(nodo(4,[arista(1,nodo(3,[])),arista(2,nodo(2,[])),arista(3,nodo(1,[]))])).
+bienEtiquetado(nodo(1,[])).
+bienEtiquetado(nodo(1, [arista(1,nodo(2,[])), arista(2,nodo(3,[]))])).
+
+
+FALSE ARBOLES
+bienEtiquetado(nodo(4, [arista(1, nodo(3, [])), arista(2, nodo(2,[]))])).
+bienEtiquetado(nodo(3,[])).
