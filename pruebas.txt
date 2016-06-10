@@ -1,9 +1,18 @@
 TRUE ARBOLES
 bienEtiquetado(nodo(4,[arista(1,nodo(3,[])),arista(2,nodo(2,[])),arista(3,nodo(1,[]))])).
+
 bienEtiquetado(nodo(1,[])).
+
 bienEtiquetado(nodo(1, [arista(1,nodo(2,[])), arista(2,nodo(3,[]))])).
 
+bienEtiquetado(nodo(1, [arista(3, nodo(4, [])), arista(2, nodo(3, [arista(1, nodo(2, []))])), arista(4, nodo(5, []))])).
+
+bienEtiquetado(nodo(1, [arista(7, nodo(8, [arista(1, nodo(9, [])), arista(2, nodo(6, []))])), arista(9, nodo(10, [arista(5, nodo(5, [])), arista(3, nodo(7, [arista(4, nodo(3, []))])), arista(8, nodo(2, [])), arista(6, nodo(4, []))]))])).
+
+bienEtiquetado(nodo(7, [arista(7, nodo(14, [arista(4,nodo(10, [arista(1, nodo(11, []))])), arista(6, nodo(8, [arista(9, nodo(17, []))])), arista(2, nodo(12, []))])), arista(5, nodo(2, [arista(16, nodo(18, [arista(12, nodo(6, []))])), arista(14, nodo(16, []))])), arista(13, nodo(20, [arista(11,  nodo(9, [])), arista(19, nodo(1, [arista(3, nodo(4, [])), arista(18, nodo(19, []))])), arista(15, nodo(5, [arista(10, nodo(15, [])), arista(8, nodo(13, []))])), arista(17, nodo(3, []))]))])).
 
 FALSE ARBOLES
 bienEtiquetado(nodo(4, [arista(1, nodo(3, [])), arista(2, nodo(2,[]))])).
+
 bienEtiquetado(nodo(3,[])).
+
