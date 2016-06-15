@@ -30,5 +30,5 @@ listanocreciente(Tam, R, Z):- lista(Tam, R, Z), nocreciente(Z).
 empezar(N,R,ListaF):- lista(1, R, Lista), sumlist(Lista,Suma), Suma =< N, K is N-Suma-1, continuar(K, R, Suma, Lista3), append([Lista], Lista3, ListaF).
 
 %continuar(0,R,Suma,[]).
-continuar(N,R,Suma,ListaF) :- lista(Suma,R,Lista), sumlist(Lista, Suma1), Suma1 < N, K is N - Suma1, continuar(K, R, Suma1, ListaRet), append([Lista], ListaRet, ListaF).
-continuar(N,R,Suma,ListaF) :- lista(Suma,R,Lista), sumlist(Lista, Suma1), Suma1 =:= N, ceros(Suma1, ListaCero), append([Lista], [ListaCero], ListaF).
+continuar(N,R,Suma,ListaF) :- lista(Suma,R,Lista), nocreciente(Lista), sumlist(Lista, Suma1), Suma1 < N, K is N - Suma1, continuar(K, R, Suma1, ListaRet), append([Lista], ListaRet, ListaF).
+continuar(N,R,Suma,ListaF) :- lista(Suma,R,Lista), nocreciente(Lista), sumlist(Lista, Suma1), Suma1 =:= N, ceros(Suma1, ListaCero), append([Lista], [ListaCero], ListaF).
