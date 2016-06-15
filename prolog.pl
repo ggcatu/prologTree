@@ -42,3 +42,17 @@ aplanar(nodo(X, [arista(Y, J) | K]), LN, LA, N):-
 		append(LA1, LA2, LA),
 		N is N1+1.
 
+
+esq([Y, X | S]) :- sumlist(Y, R), len(X,P), R =:= P, esq([X | S]).
+esq([X]) :- sumlist(X, R), R =:= 0.
+
+g(X,X) :- X > 0.
+g(X,Y) :- X > 0, X1 is X-1, g(X1,Y).
+
+lista(1, MAX, Acum) :- g(MAX, X), Acum = [X].
+lista(Y , MAX, Acum) :- Y > 1, Y1 is Y-1, lista(Y1, MAX, Acum2), g(MAX,X), append([X],Acum2,Acum).
+
+nocreciente([X]).
+nocreciente([X , Y | S]) :- X >= Y, nocreciente([Y | S]),!.
+
+listanocreciente(Tam, R, Z):- lista(Tam, R, Z), nocreciente(Z).
