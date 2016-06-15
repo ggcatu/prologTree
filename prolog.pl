@@ -64,3 +64,7 @@ empezar(N,R,ListaF):- lista(1, R, Lista), sumlist(Lista,Suma), Suma =< N, K is N
 
 continuar(N,R,Suma,ListaF) :- lista(Suma,R,Lista), nocreciente(Lista), sumlist(Lista, Suma1), Suma1 < N, K is N - Suma1, continuar(K, R, Suma1, ListaRet), append([Lista], ListaRet, ListaF).
 continuar(N,R,Suma,ListaF) :- lista(Suma,R,Lista), nocreciente(Lista), sumlist(Lista, Suma1), Suma1 =:= N, ceros(Suma1, ListaCero), append([Lista], [ListaCero], ListaF).
+
+sumarEsq(esq(X),R):- sumarAux(X,R).
+sumarAux([], 0).
+sumarAux([X | Y], R) :- len(X, Suma), sumarAux(Y, R1), R is Suma+R1. 
