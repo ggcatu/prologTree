@@ -221,7 +221,7 @@ bajar2(Nodo, MAX, [[Y | K], R | S], Veces , Res):-
 	esqEtiquetables(+R,+N)
 	Verifica que todos los esqueletos de árboles R-arios con N nodos son bien etiquetables 
 */
-esqEtiquetables(R, N, P):- 
+esqEtiquetables(R, N):- 
 	forall(esqueleto(N,R,X), etiquetamiento(X, Y)).
 
 /*
