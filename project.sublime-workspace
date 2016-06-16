@@ -1,0 +1,729 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"imprimirMatr",
+				"imprimirMatrizN"
+			],
+			[
+				"Array",
+				"ArrayList"
+			],
+			[
+				"int",
+				"Integer"
+			],
+			[
+				"getExtre",
+				"getExtremo1"
+			],
+			[
+				"get",
+				"getPeso"
+			],
+			[
+				"getExte",
+				"getExtremo1"
+			],
+			[
+				"Aris",
+				"Arista"
+			],
+			[
+				"Arista",
+				"AristaComparator"
+			],
+			[
+				"Romb",
+				"RomboComparator"
+			],
+			[
+				"grafo",
+				"grafoCargado"
+			],
+			[
+				"matriz",
+				"matrizaGrafo"
+			],
+			[
+				"m",
+				"m	method"
+			],
+			[
+				"con",
+				"conjuntos"
+			],
+			[
+				"temp",
+				"tempPosiciones"
+			],
+			[
+				"tem",
+				"tempIzquierda"
+			],
+			[
+				"ger",
+				"getExtremoFinal"
+			],
+			[
+				"return",
+				"returnVertices"
+			],
+			[
+				"A",
+				"ArrayList"
+			],
+			[
+				"retrun",
+				"returnLados"
+			],
+			[
+				"ex",
+				"getExtremoFinal"
+			],
+			[
+				"ge",
+				"getExtremoFinal"
+			],
+			[
+				"Arco",
+				"Arco"
+			],
+			[
+				"extremo1",
+				"extremo1"
+			],
+			[
+				"extremo",
+				"getExtremo1"
+			],
+			[
+				"u",
+				"u"
+			],
+			[
+				"getEx",
+				"getExtremo2"
+			],
+			[
+				"Get",
+				"getExtremo1"
+			],
+			[
+				"numerode",
+				"numeroDeLados"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"print",
+				"println"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"Grafo",
+				"GrafoNoDirigido"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "pro.pl",
+			"settings":
+			{
+				"buffer_size": 4766,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "R = [arista(0, nodo(3, [arista(0, nodo(3, [arista(0, nodo(3, []))])), arista(0, nodo(3, []))])),\n\n	 arista(0, nodo(3, [arista(0, nodo(3, []))])), \n	 arista(0, nodo(3, []))] .\n",
+			"settings":
+			{
+				"buffer_size": 175,
+				"line_ending": "Windows",
+				"name": "R = [arista(0, nodo(3, [arista(0, nodo(3, [arista("
+			}
+		},
+		{
+			"contents": "\n[[2,1,1] [1,1,0,0] [0,0]]\n [arista(0, nodo(3, [arista(0, nodo(3, [arista(0, nodo(3, []))])),\n   					 arista(0, nodo(3, [arista(0, nodo(3, []))]))])),\n  arista(0, nodo(3, [arista(0, nodo(3, []))])), \n  arista(0, nodo(3, [arista(0, nodo(3, []))]))]  \n\n[[2,1,1] [2,1,0,0] [0,0]]\n  [arista(0, nodo(3, [arista(0, nodo(3, [arista(0, nodo(3, [])), arista(0, nodo(3, []))])), \n  					  arista(0, nodo(3, [arista(0, nodo(3, []))]))])), \n   arista(0, nodo(3, [arista(0, nodo(3, []))])),\n   arista(0, nodo(3, [arista(0, nodo(3, []))]))] \n\n[[1,1,2], [1,1,0,0], [0,0,0]]\n[arista(0, nodo(3, [arista(0, nodo(3, [arista(0, nodo(3, []))]))])), \n arista(0, nodo(3, [arista(0, nodo(3, [arista(0, nodo(3, []))]))])),\n arista(0, nodo(3, [arista(0, nodo(3, [])), arista(0, nodo(3, []))]))] ",
+			"settings":
+			{
+				"buffer_size": 770,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "[debug] 44 ?- topLink2(3, 3, [[1,1,2], [1,1,0,0], [0,0]], 3, R).\nR = [arista(0, nodo(3, [arista(0, nodo(3, [arista(0, nodo(3, [arista(0, nodo(3, []))]))]))])),\n	 arista(0, nodo(3, [arista(0, nodo(3, [arista(0, nodo(3, [arista(0, nodo(3, []))]))]))])),\n	 arista(0, nodo(3, [arista(0, nodo(3, [])), arista(0, nodo(3, []))]))] \n\n\nP = [arista(1, nodo(4, [arista(0, nodo(4, []))])), \n     arista(1, nodo(4, [arista(0, nodo(4, []))])), \n     arista(1, nodo(4, [arista(0, nodo(4, []))]))] .\n",
+			"settings":
+			{
+				"buffer_size": 484,
+				"line_ending": "Windows",
+				"name": "[debug] 44 ?- topLink2(3, 3, [[1,1,2], [1,1,0,0],"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Java/Ant.sublime-build",
+					""
+				],
+				[
+					"Packages/Java/JavaC.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Java/JavaC.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 490.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"defa",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			]
+		],
+		"width": 490.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/gabriel/prologTree"
+	],
+	"file_history":
+	[
+		"/C/Users/gabriel/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/gabriel/Documents/Prolog/pro.pl",
+		"/C/Users/gabriel/Desktop/pro.pl",
+		"/C/Users/gabriel/Desktop/hi.cpp",
+		"/C/Users/gabriel/Desktop/P1.java",
+		"/C/Users/gabriel/Desktop/Proy2/scanner.cpp",
+		"/C/Users/gabriel/Desktop/preguntar",
+		"/C/Users/gabriel/Desktop/Try,html",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/guardar-anuncio.php",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/anuncios.php",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/publicar-anuncio.php",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/tab-publicar-anuncio.php",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/custom.js",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/app.js",
+		"/C/Users/gabriel/Desktop/matlabguille",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/gracias.php",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/form-u157.php",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/estilos.css",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/resultados.php",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/tab-cuenta.php",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/tab-pagos.php",
+		"/C/Users/gabriel/AppData/Local/Temp/fz3temp-1/try.php",
+		"/C/Users/gabriel/Desktop/jwplayer.js",
+		"/C/Users/gabriel/Desktop/try.php",
+		"/C/Users/gabriel/Desktop/ProFinal/Proyecto III/Puzzle8.java",
+		"/C/Users/gabriel/Desktop/ProFinal/Proyecto III/Juego.java",
+		"/C/Users/gabriel/AppData/Local/Temp/Rar$DIa0.169/Alpinista.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Grafo/GrafoNoDirigido.java",
+		"/C/Users/gabriel/Desktop/Proyecto III/Juego2.java",
+		"/C/Users/gabriel/Desktop/Proyecto III/Juego.java",
+		"/C/Users/gabriel/Desktop/Proyecto III/Juego - Copy.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 3/Juego.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Cubos/TorreDeCubos.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 3/TorreDeCubos.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Cucarachas/joeApt.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/ClienteGrafo.java",
+		"/C/Users/gabriel/Desktop/Cubos/debug.txt",
+		"/C/Users/gabriel/Desktop/Cubos/TorreDeCubos.java",
+		"/C/Users/gabriel/Desktop/Cubos/[path",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Cucarachas/GrafoNoDirigido.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Cucarachas/Arista.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Cucarachas/Vertice.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Cucarachas/Digrafo.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Cucarachas/Grafo.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Cucarachas/Cucarachas.java",
+		"/C/Users/gabriel/Desktop/prior.java",
+		"/C/Users/gabriel/Desktop/Arepa Dulce/GrafoNoDirigido.java",
+		"/C/Users/gabriel/Desktop/Arepa Dulce/Vertice.java",
+		"/C/Users/gabriel/Desktop/Arepa Dulce/bigGrid.in",
+		"/C/Users/gabriel/Desktop/Arepa Dulce/ArepaDulce.java",
+		"/C/Users/gabriel/Desktop/Arepa Dulce/Entrega/ArepaDulce.java",
+		"/C/Users/gabriel/Desktop/Arepa Dulce/mediumGrid.in",
+		"/C/Users/gabriel/Desktop/Arepa Dulce/ArepaDulceNoFloyd.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Laboratorio 3/VolumenDeAgua/VolumenDeAgua.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Laboratorio 3/Laberinto/Laberinto.java",
+		"/D/Entrega/README.txt",
+		"/D/Entrega/RecorridoTurista.java",
+		"/D/Entrega/ListaCamino.java",
+		"/D/Entrega/Articulacion.java",
+		"/D/Entrega/Vertice.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/Ejercicio 3/Vertice.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/Ejercicio 3/Arista.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/Ejercicio 3/Articulacion.java",
+		"/D/Proyecto2Final/RecorridoTurista.java",
+		"/D/Proyecto2Final/ListaCamino.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/Ejercicio 3/GrafoNoDirigido.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/Ejercicio 3/Calle.java",
+		"/C/Users/gabriel/Downloads/Articulacion.java",
+		"/C/Users/gabriel/Desktop/Entrega/Billboard.txt",
+		"/C/Users/gabriel/AppData/Roaming/Sublime Text 3/Packages/User/java.sublime-build",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/Recorrido2.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Laboratorio 4/Nreinas.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/RecorridoTurista.java",
+		"/C/Users/gabriel/Desktop/Guille/RecorridoTuristaGuille.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/RecorridoTuristaGuille.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/ListaCamino.java",
+		"/C/Users/gabriel/Downloads/RecorridoTurista.java",
+		"/C/Users/gabriel/Desktop/Guille/RecorridoTurista.java",
+		"/C/Users/gabriel/Desktop/Java.sublime-package3/JavaC.sublime-build",
+		"/C/Users/gabriel/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Program Files (x86)/Sublime Text 3/Packages/Java.sublime-package",
+		"/C/Users/gabriel/Desktop/Java.sublime-package/JavaC.sublime-build",
+		"/C/Users/gabriel/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/gabriel/Desktop/AS/JavaC.sublime-build",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/GrafoViejo.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/VolumenDeAgua.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/GrafoNoDirigido.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Laboratorio 3/VolumenDeAgua/GrafoNoDirigido.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/Lado.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Proyecto 2/Arista.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Laboratorio 4/Reina.java",
+		"/C/Users/gabriel/Desktop/Universidad/Laboratorios/Algoritmos/Algoritmos III/Laboratorio 4/Reina2.java",
+		"/C/Users/gabriel/Desktop/Informacion.txt",
+		"/C/Users/gabriel/Desktop/Uzca",
+		"/C/Users/gabriel/Desktop/Prueba.java",
+		"/C/Users/gabriel/Desktop/Prueba.class",
+		"/C/Users/gabriel/Desktop/Prueba",
+		"/C/Users/gabriel/Desktop/class Prueba{",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 4/Reinas.java",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 3/VolumenDeAgua/VolumenDeAgua.java",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 3/VolumenDeAgua/Cliente.java",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 3/Laberinto.java",
+		"/C/Users/gabriel/Desktop/Maraton/scubadiv.java",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 3/Cliente.java",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 3/Ejercicio2/GrafoNoDirigido.java",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 3/Ejercicio2/Vertice.java",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 3/Grafo.java",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 3/Ejercicio2/Cliente.java",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 3/Ejercicio2/Grafo.java",
+		"/C/Users/gabriel/Downloads/1) a)",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 2/Grafo.java",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 3/Grafo - Copy.java",
+		"/C/Users/gabriel/Desktop/EntregaProyecto/GrafoNoDirigido.java",
+		"/C/Users/gabriel/Desktop/EntregaProyecto/Menu.java",
+		"/C/Users/gabriel/Desktop/codigo/Laboratorio 2/Tour.java",
+		"/C/Users/gabriel/Desktop/EntregaProyecto/Arco.java",
+		"/C/Users/gabriel/Desktop/EntregaProyecto/Arista.java",
+		"/C/Users/gabriel/Desktop/EntregaProyecto/ClienteGrafo.java",
+		"/C/Users/gabriel/Desktop/EntregaProyecto/ClienteGrafo2.java",
+		"/C/Users/gabriel/Desktop/EntregaProyecto/Digrafo.java",
+		"/C/Users/gabriel/Desktop/EntregaProyecto/Grafo.java",
+		"/C/Users/gabriel/Desktop/EntregaProyecto/Lado.java",
+		"/C/Users/gabriel/Desktop/EntregaProyecto/Vertice.java",
+		"/C/Users/gabriel/Desktop/EntregaProyecto/ClienteGrafo3.java",
+		"/C/Users/gabriel/Desktop/codigo/Digrafo.java",
+		"/C/Users/gabriel/Downloads/Digrafo.java",
+		"/C/Users/gabriel/Desktop/codigo/GrafoNoDirigido.java"
+	],
+	"find":
+	{
+		"height": 43.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Veces",
+			"X",
+			"Nodo",
+			"J",
+			"linkear",
+			"Elem",
+			"elem",
+			"Tailor",
+			"elem",
+			"Tailor",
+			"elemx",
+			"T",
+			"elemx",
+			"int",
+			"pr",
+			"str",
+			"str.length()-1",
+			"length",
+			"()-",
+			"length",
+			"validator",
+			"inboxlab",
+			"mosaic-overlay",
+			"0,00",
+			"Manhattan",
+			"inicial",
+			"i",
+			"matriz",
+			"imprimirMatrizN",
+			"max",
+			"maxPeso",
+			"temp",
+			"max",
+			"resultado",
+			"i",
+			"System",
+			"temp",
+			"k",
+			"j",
+			"i",
+			"Arista",
+			"agregarArista",
+			"value",
+			"Rombo",
+			"RomboComparator",
+			"add",
+			"getPeso",
+			"String",
+			"peso",
+			"agregarVertice",
+			"solucion",
+			"));\n",
+			"matrizExpandida",
+			"];				",
+			"					\n",
+			"path",
+			"i",
+			"conjuntos",
+			"grafo",
+			"inicial",
+			"vertices",
+			"getExtremo1",
+			"Arista",
+			"String",
+			"ctrl+shift+b",
+			"visitados",
+			"System.",
+			"inicio",
+			"first",
+			"derecha",
+			"fila",
+			"tempIzquierda",
+			"tempDerecha",
+			"ArrayList",
+			"posiciones",
+			"oxy",
+			"system.out",
+			"grafo",
+			"i",
+			"String",
+			"void",
+			"solu",
+			"maximo",
+			"minimo",
+			"\"));\n",
+			"7",
+			"solucion",
+			"soulcion",
+			"agregarArista",
+			"for(int i=0; i<n;i++){\n				for(int k=0; k<m;k++)\n					System.out.print(matriz[i][k]+\" \");\n				System.out.println();\n			}",
+			"Integer",
+			"i",
+			"token",
+			"lados",
+			"push",
+			"vertices",
+			"Digrafo",
+			"peso",
+			"Vertice",
+			"return",
+			"Id",
+			"Arista",
+			"peso",
+			"Double",
+			"peso",
+			"Vertice",
+			"izquierdo",
+			"Inicial",
+			"Vertice",
+			"arcos",
+			"Vertice",
+			"Inicial",
+			"author",
+			"Gimenez",
+			"boolean",
+			"eliminar",
+			"añadida",
+			"id",
+			"\n//",
+			"increase_font_size",
+			"vertices",
+			"adyacentes",
+			"vertices",
+			"boolean",
+			"esta",
+			"verificar",
+			"inicial",
+			"579"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "pro.pl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4766,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2987,
+								2987
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Perl/Perl.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1826.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								43,
+								49
+							]
+						],
+						"settings":
+						{
+							"auto_name": "R = [arista(0, nodo(3, [arista(0, nodo(3, [arista(",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 770,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								770,
+								770
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								436,
+								436
+							]
+						],
+						"settings":
+						{
+							"auto_name": "[debug] 44 ?- topLink2(3, 3, [[1,1,2], [1,1,0,0],",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 169.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Java/JavaC.sublime-build",
+	"project": "project.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 63.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
