@@ -31,8 +31,8 @@ imprimirArbol(nodo(X, [arista(Y, nodo(Z, W)) | V]), S, T) :-
 	imprimirIndice(S),
 	write('\n'),
 	T1 is T+1,
-	imprimirArbol(nodo(X,V),S,T1),
-	imprimirArbol(nodo(Z,W),L,0), !.
+	imprimirArbol(nodo(Z,W),L,0),
+	imprimirArbol(nodo(X,V),S,T1), !.
 
 imprimirIndice([X]) :-
 	write(X),
