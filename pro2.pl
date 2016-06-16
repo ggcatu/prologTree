@@ -124,7 +124,6 @@ esq([X]) :- sumlist(X, R), R =:= 0.
 	Ejercicio 2)
 	Genera todos los esqueletos N,R
 */
-esqueleto(1,1, esq([[0]])) :- !.
 esqueleto(N,R, esq(ListaF)) :- empezar(N,R,ListaF).
 
 /*
@@ -168,97 +167,59 @@ take(Num, [S | Full], Take):- N1 is Num-1, take(N1, Full, Take1), append([S], Ta
 rest(0, Full, Full).
 rest(Num, [_ | Full], Res):- N1 is Num-1, rest(N1, Full, Res), !.
 
-
-/* 
-	etiquetamiento(+Esqueleto,-Arbol)
-	Genera todos los arboles etiquetables a partir de un esqueleto
+/*
+	Magia negra
 */
 topLink2(Nodo, Max, Hijos, 0, []).
-topLink2(Nodo, MAX, Hijos, F, Res):- F > 0, bajar2(Nodo, MAX, Hijos, F, Res).
+topLink2(Nodo, MAX, Hijos, F, Res):- F > 0, bajar2(Nodo, [Nodo], MAX, Hijos, F, Res).
 
-etiquetamiento(esq([[0]]), nodo(1,[])).
+/* 
+		
+*/
 etiquetamiento(esq([[X] | S]), nodo(Num,P)) :- 
 	sumarEsq(esq([[X] | S]), MAX), 
 	go(MAX, Num),
 	topLink2(Num, MAX, S, X, P),
 	bienEtiquetado(nodo(Num,P)).
 
-bajar2(Nodo, MAX, [[Y | K], R | S], 1, Res):- 
-	go(MAX, No), 
+nonmember(X, Lista):- not(member(X,Lista)).
+
+bajar2(Nodo, Acum, MAX, [[Y | K], R | S], 1, Res):- 
+	go(MAX, No),
+	nonmember(No, Acum), 
 	Ar is abs(Nodo - No), 
 	(Ar =:= 0 -> fail; true),
 	topLink2(No, MAX, [R | S], Y, Bottom), 
 	Res = [arista(Ar, nodo(No, Bottom))].
 
-bajar2(Nodo, MAX, [[0 | R]], 1, Res):-
-	go(MAX, No), 
+bajar2(Nodo, Acum, MAX, [[0 | R]], 1, Res):-
+	go(MAX, No),
+	nonmember(No, Acum),
 	Ar is abs(Nodo - No),
 	(Ar =:= 0 -> fail; true),
 	Res = [arista(Ar, nodo(No, []))].
 
-bajar2(Nodo, MAX, [[0 | R]], Veces, Res):-
+bajar2(Nodo, Acum, MAX, [[0 | R]], Veces, Res):-
 	Veces > 1,
-	go(MAX, No), 
+	go(MAX, No),
+	nonmember(No, Acum), 
 	Ar is abs(Nodo - No),
 	(Ar =:= 0 -> fail; true),
 	Res1 = [arista(Ar, nodo(No, []))],
 	N1 is Veces-1,
-	bajar2(Nodo, MAX, [R], N1,  Resp),
+	bajar2(Nodo, [No |Acum], MAX, [R], N1,  Resp),
 	append(Resp,Res1, Res).
 
-bajar2(Nodo, MAX, [[Y | K], R | S], Veces , Res):- 
+bajar2(Nodo, Acum, MAX, [[Y | K], R | S], Veces , Res):- 
 	Veces > 1,
-	go(MAX, No), Ar is abs(Nodo - No),
+	go(MAX, No),
+	nonmember(No, Acum), 
+	Ar is abs(Nodo - No),
 	(Ar =:= 0 -> fail; true),
 	rest(Y, R, Resto),
 	topLink2(No, MAX, [R | S], Y, Bottom), 
 	Res1 = [arista(Ar, nodo(No, Bottom))],
 	N1 is Veces - 1, 
-	bajar2(Nodo, MAX, [K, Resto | S], N1, Res2), 
+	bajar2(Nodo, [No |Acum], MAX, [K, Resto | S], N1, Res2), 
 	append(Res1,Res2, Res).
 
-/*
-	esqEtiquetables(+R,+N)
-	Verifica que todos los esqueletos de árboles R-arios con N nodos son bien etiquetables 
-*/
-esqEtiquetables(R, N, P):- 
-	forall(esqueleto(N,R,X), etiquetamiento(X, Y)).
-
-/*
-	describirEtiquetamiento(+Arbol)
-	Muestra en pantalla el etiquetamiento de un arbol.
-*/
-describirEtiquetamiento(nodo(X, [])) :-
-	write('\n(0)  '),
-	write(X),
-	write('\n'), !.
-describirEtiquetamiento(nodo(X, [arista(Y, nodo(Z, W)) | V])) :-
-	S = [0],
-	write('\n(0)  '),
-	write(X),
-	write('\n'),
-	imprimirArbol(nodo(X, [arista(Y, nodo(Z, W)) | V]), S, 0).
-
-imprimirArbol(nodo(_,[]),_,_).
-imprimirArbol(nodo(X, [arista(Y, nodo(Z, W)) | V]), S, T) :-
-	append(S,[T],L),
-	write('('),
-	imprimirIndice(L),
-	write('   '),
-	write(Z),
-	write('   con arista   '),
-	write(Y),
-	write('   a   ('),
-	imprimirIndice(S),
-	write('\n'),
-	T1 is T+1,
-	imprimirArbol(nodo(Z,W),L,0),
-	imprimirArbol(nodo(X,V),S,T1), !.
-
-imprimirIndice([X]) :-
-	write(X),
-	write(')').
-imprimirIndice([X | XS]) :-
-	write(X),
-	write('.'),
-	imprimirIndice(XS), !.
